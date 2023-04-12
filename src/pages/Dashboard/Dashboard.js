@@ -11,7 +11,7 @@ const Dashboard = () => {
   const { user } = useAuthValue();
   const uid = user.uid;
 
-  const { documents: posts, loading, error } = useFetchDocuments('posts', null, uid);
+  const { documents: posts, loading } = useFetchDocuments('posts', null, uid);
 
   const { deleteDocument } = useDeleteDocument('posts');
 

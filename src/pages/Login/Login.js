@@ -1,7 +1,7 @@
 import styles from './Login.module.css';
 
 import { useState, useEffect } from 'react';
-import { useAuthentication } from '../../hooks/useAtuhentication';
+import { useAuthentication } from '../../hooks/useAuthentication';
 
 const Login = () => {
   const [email, setEmail] = useState('');
